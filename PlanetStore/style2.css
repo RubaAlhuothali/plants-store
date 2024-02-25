@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600&display=swap');
+ table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      th, td {
+        text-align: left;
+        padding: 10px;
+        border-bottom: 0px solid #ddd;
+      }
+     
+      tr:hover {
+        background-color: #196;
+      }
+      h1 {
+        text-align: center;
+        color: #416d3e;
+      }
+      p {
+        margin-bottom: 20px;
+        font-size: 22px;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+      }
+  img {
+       max-width:70%;
+        height: auto    
+ border-radius: 30px;
+      }
+.plants {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    padding-top: 17rem;
+    padding-bottom: 17rem;
+ border-radius: 30px;
+    padding-left: 10rem;
+}
+.AddToCart{
+color:#073518;
+    width: 9rem;
+    height: 3rem;
+ background-color: #43c053;
+ border-radius: 30px;
+}
+.container p {
+    color:white;
+    font-size: 2.5rem;
+ text-align: left;
+}
+:root {
+    --green: #43c053;
+    --dark-green: #073518;
+    --light-gray: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+}
+
+body {
+    background-color: #eee;
+background: url("https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGxhbnQlMjB3YWxscGFwZXJ8ZW58MHx8MHx8fDA%3D") no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+section {
+    padding: 2rem;
+}
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem; /* Adjusted padding */
+    font-size: 1.5rem; /* Adjusted font size */
+    border-radius: .5rem;
+    border: .2rem solid var(--dark-green);
+    color: var(--green);
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    background-color: var(--green);
+    color: #fff;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem 9%;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bolder;
+    color: #073518;
+}
+
+.header .logo i {
+    font-size: 2rem; /* Adjust the size as needed */
+    font-weight: bolder;
+    color: var(--green);
+}
+
+.header .navbar a {
+    font-size: 1.4rem; /* Adjust the size as needed */
+    margin: 0 1rem;
+    color: var(--dark-green);
+}
+
+.header .navbar a:hover {
+    color: var(--green);
+}
+
+.header .icons div {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    border-radius: .5rem;
+    background: #eee;
+    color: var(--dark-green);
+    font-size: 2rem;
+    margin-left: .3rem;
+}
+
+.header .icons div:hover {
+    background: var(--green);
+    color: #fff;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("plant_background.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 17rem;
+}
+
+.home .content {
+    text-align: center;
+    padding-top: 5rem;
+    width: 80rem;
+    height: 20rem;
+    background-color: rgba(0,0,0,0.5);  
+}
+
+.home h1 {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.home p {
+    color: #fff;
+    font-size: 4rem;
+}
+
+.footer {
+    background-color: var(--dark-green);
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-links a:hover {
+    color: var(--green);
+}
+
+.footer-bottom {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+}
+
+
+.about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Adjust background color as needed */
+    padding: 5rem 0; /* Adjust padding as needed */
+}
+
+.about-us .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-us-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+.about-us-text {
+    max-width: 500px; 
+    margin-left: 2rem; 
+    text-align: left; 
+}
+
+.about-us-text h2 {
+    font-size: 2.5rem; 
+    color: #073518; 
+    margin-bottom: 1rem; 
+}
+
+.about-us-text p {
+    font-size: 1.6rem;
+    color: #666; 
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 5rem 0;
+}
+
+.contact-us .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.contact-form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contact-us-text {
+    max-width: 400px;
+    text-align: left;
+}
+
+form {
+    width: 100%;
+    padding: 2em;
+    text-align: left;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: left;
+    width: 8em;
+    padding-right: 1em;
+    margin-bottom: 1em;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 0.8em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+#mySubmit {
+    margin-left: 0;
+    color: var(--green);
+}
+
+.contact-us-img img {
+    max-width: 100%;
+    height:550px;
+    border-radius: 8px;
+    margin-left: 10em; /* Adjust the value as needed */
+}
+/* Common styles for login form and shopping cart */
+.header .login-form,
+.header .shopping-cart {
+    position: absolute;
+    top: 110%;
+    right: -110%;
+    width: 30rem;
+    background: #eee;
+    border-radius: .5rem;
+    padding: 1rem;
+    transition: .4s linear;
+}
+.header .login-form {
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.header .login-form h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--dark-green);
+}
+.header .login-form label{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--dark-green);
+}
+
+.header .login-form .box {
+    margin: 1rem 0; /* Adjusted margin */
+    color: var(--dark-green);
+    background: #eee;
+    border-radius: 0.5rem;
+    padding: 1.5rem; /* Adjusted padding */
+    font-size: 1.6rem;
+}
+
+.header .login-form input {
+    color: var(--box-shadow);
+    background-color: #eee;
+    border: 1px solid var(--dark-green);
+    border-radius: 0.3rem;
+    padding: 0.5rem; /* Adjusted padding */
+    margin-top: 0.5rem; /* Adjusted margin */
+}
+
+.header .login-form p {
+    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    color: var(--light-gray);
+}
+
+.header .login-form p a {
+    margin: 0.5rem 0; /* Adjusted margin */
+    background: #eee;
+    border-radius: 0.5rem;
+    color: var(--dark-green);
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    color: var(--green);
+    text-decoration: underline;
+}
+.header .login-form .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem; /* Adjusted padding */
+    font-size: 1.5rem; /* Adjusted font size */
+    border-radius: .5rem;
+    border: .2rem solid var(--dark-green);
+    color: var(--green);
+    cursor: pointer;
+}
+
+
+.header .login-form .btn:hover{
+    background-color: var(--green);
+    color: #fff;
+}
+
+
+/* Specific styles for shopping cart */
+.header .shopping-cart .box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    margin: 1rem 0;
+}
+
+.header .shopping-cart .box img {
+    height: 10rem;
+}
+
+.header .shopping-cart .box .fa-trash {
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    cursor: pointer;
+    color: var(--light-gray);
+    transform: translateY(-50%);
+}
+
+.header .shopping-cart .box .fa-trash:hover {
+    color: var(--green);
+}
+
+.header .shopping-cart .box .content h3,
+.header .shopping-cart .box .content span {
+    padding-bottom: 1rem;
+}
+
+.header .shopping-cart .total {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.header .shopping-cart .btn {
+    display: block;
+    text-align: center;
+    margin: 1rem;
+}
+
+/* Active state for both login form and shopping cart */
+.header .login-form.active,
+.header .shopping-cart.active {
+    right: 2rem;
+}
